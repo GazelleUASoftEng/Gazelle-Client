@@ -10,7 +10,7 @@ public class ProductMain {
 		Product testProduct = new Product();
 		testProduct.setDescription("Stimutacs");
 		testProduct.setPrice(99.99);
-		testProduct.setItemType(0);
+		testProduct.setItemType(ProductItemType.NORMAL);
 		testProduct.setCost(89.99);
 		testProduct.setQuantity(500);
 		testProduct.setReorderPoint(0);
