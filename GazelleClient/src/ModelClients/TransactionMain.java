@@ -17,6 +17,7 @@ public class TransactionMain {
 		testEmployee.setEmployeeId("010874852");
 		testEmployee.setFirstName("Dustin");
 		testEmployee.setLastName("Brown");
+		testEmployee.save();
 		
 		Transaction testTransaction = new Transaction();
 		testTransaction.setParentId(null);
@@ -24,7 +25,7 @@ public class TransactionMain {
 		testTransaction.setAmount(11.45);
 		testTransaction.setCashierId(testEmployee.getId());
 		
-		testEmployee.save();
+		
 		testTransaction.save();
 	}
 
